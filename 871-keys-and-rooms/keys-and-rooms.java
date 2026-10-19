@@ -16,10 +16,10 @@ class Solution {
             // }
             // vis[front]=true;
             // }
-            for(int j=0;j<rooms.get(front).size();j++){
-                if(!vis[rooms.get(front).get(j)]){
-                    q.add(rooms.get(front).get(j));
-                    vis[rooms.get(front).get(j)]=true;
+            for(int ele:rooms.get(front)){
+                if(!vis[ele]){
+                    q.add(ele);
+                    vis[ele]=true;
                 }
             }
 
